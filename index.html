@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>秦汉西非 | 加纳矿业工程、矿山运营与资源投资</title>
+<meta name="description" content="秦汉西非自2022年进入加纳，围绕大型金矿建设与运营，开展矿业工程、采剥施工、运营维护和矿业投资。">
+<style>
+:root{
+  --green:#0f3d2e; --green2:#184f3c; --gold:#c8962e; --stone:#f2f3ef; --paper:#fff;
+  --ink:#1c2420; --mute:#5c6862; --line:#d9ddd6;
+  --serif:"Songti SC","Noto Serif SC","Source Han Serif SC","STSong","SimSun",serif;
+  --sans:-apple-system,"PingFang SC","Noto Sans SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{font-family:var(--sans);color:var(--ink);background:var(--stone);line-height:1.75;font-size:16px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.35}
+header{position:sticky;top:0;z-index:10;background:var(--green);color:#fff}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:16px}
+.logo{font-family:var(--serif);font-size:19px;font-weight:700;letter-spacing:.08em;text-decoration:none;white-space:nowrap}
+.logo small{font-family:var(--sans);font-size:11px;font-weight:400;opacity:.7;margin-left:8px;letter-spacing:.04em}
+nav{display:flex;gap:20px;overflow-x:auto;font-size:14px;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav a{text-decoration:none;opacity:.85;white-space:nowrap;padding:4px 0}
+nav a:hover{opacity:1;color:var(--gold)}
+
+/* hero */
+.hero{background:var(--green);color:#fff;position:relative;overflow:hidden}
+.hero .wrap{position:relative;z-index:1;padding-top:72px;padding-bottom:150px}
+.hero h1{font-size:clamp(30px,5.2vw,54px);max-width:14em;letter-spacing:.02em}
+.hero p{margin-top:22px;max-width:36em;font-size:17px;color:#d6e2dc}
+.btns{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 24px;font-size:15px;text-decoration:none;border:1px solid var(--gold);color:#fff}
+.btn.fill{background:var(--gold);color:var(--green);font-weight:600}
+.btn:hover{background:#fff;color:var(--green);border-color:#fff}
+.pit{position:absolute;left:0;right:0;bottom:0;width:100%;height:150px;display:block}
+
+/* facts */
+.facts{background:var(--paper);border-bottom:1px solid var(--line)}
+.facts ul{list-style:none;display:grid;grid-template-columns:repeat(6,1fr)}
+.facts li{padding:28px 16px;border-left:1px solid var(--line)}
+.facts li:first-child{border-left:0}
+.facts b{display:block;font-family:var(--serif);font-size:28px;color:var(--green);line-height:1.2}
+.facts span{font-size:13px;color:var(--mute)}
+
+section{padding:76px 0}
+section.alt{background:var(--paper)}
+.sec-h{max-width:40em;margin-bottom:40px}
+.sec-h h2{font-size:30px;color:var(--green)}
+.sec-h p{margin-top:10px;color:var(--mute)}
+.sec-h em{font-style:normal;font-size:13px;color:var(--gold);letter-spacing:.06em;display:block;margin-bottom:6px}
+
+.grid{display:grid;gap:24px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.item{border-top:3px solid var(--gold);padding-top:16px}
+.item h3{font-size:19px;margin-bottom:6px;color:var(--green)}
+.item p{font-size:15px;color:var(--mute)}
+
+/* about */
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:48px}
+.about p+p{margin-top:14px}
+.entities{background:var(--green);color:#fff;padding:26px}
+.entities h3{font-size:16px;margin-bottom:12px;color:var(--gold)}
+.entities li{list-style:none;font-size:13px;padding:9px 0;border-top:1px solid rgba(255,255,255,.18);letter-spacing:.02em}
+.entities p{font-size:13px;color:#b9cbc2;margin-top:14px}
+
+/* project */
+.project{display:grid;grid-template-columns:1fr 1.1fr;gap:0;background:var(--green);color:#fff}
+.project .lead{padding:40px;border-right:1px solid rgba(255,255,255,.15)}
+.project .lead small{color:var(--gold);font-size:13px}
+.project .lead h3{font-size:30px;margin:6px 0 14px}
+.project .lead p{color:#cfdcd5;font-size:15px}
+.scope{padding:40px}
+.scope div{padding:14px 0;border-top:1px solid rgba(255,255,255,.18)}
+.scope div:first-child{border-top:0;padding-top:0}
+.scope b{font-family:var(--serif);color:var(--gold);font-size:17px;display:block}
+.scope span{font-size:14px;color:#cfdcd5}
+.note{margin-top:20px;color:var(--mute);font-size:15px;max-width:48em}
+
+.tag{display:inline-block;font-size:12px;padding:2px 10px;border:1px solid var(--green);color:var(--green);margin-bottom:10px}
+.tag.p{border-color:var(--gold);color:#8a6414}
+.box{background:var(--paper);border:1px solid var(--line);padding:24px}
+.box h3{font-size:19px;color:var(--green);margin-bottom:6px}
+.box p{font-size:15px;color:var(--mute)}
+.places{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.places span{padding:4px 14px;background:var(--stone);border:1px solid var(--line);font-size:14px}
+
+.assets{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.assets ul{list-style:none}
+.assets li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.assets li b{font-family:var(--serif);font-size:22px;color:var(--green);white-space:nowrap}
+.assets li span{color:var(--mute);font-size:15px}
+
+.govs{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.govs span{padding:6px 14px;background:var(--stone);border:1px solid var(--line);font-size:14px}
+
+footer{background:var(--green);color:#fff;padding:64px 0 28px}
+footer h2{font-size:28px}
+footer p{color:#b9cbc2;max-width:34em;margin-top:8px}
+.contact{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:32px}
+.contact div{border-top:1px solid rgba(255,255,255,.25);padding-top:12px;font-size:15px}
+.contact small{display:block;color:var(--gold);font-size:13px}
+.copy{margin-top:48px;font-size:12px;color:#8fa79b}
+
+@media (max-width:860px){
+  .facts ul{grid-template-columns:repeat(3,1fr)}
+  .facts li:nth-child(4){border-left:0}
+  .facts li{border-top:1px solid var(--line)}
+  .facts li:nth-child(-n+3){border-top:0}
+  .g3,.g2,.about,.project,.assets,.contact{grid-template-columns:1fr}
+  .project .lead{border-right:0;border-bottom:1px solid rgba(255,255,255,.15)}
+  .hero .wrap{padding-top:48px;padding-bottom:120px}
+  section{padding:56px 0}
+  .logo small{display:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">秦汉西非<small>QIN HAN WEST AFRICA</small></a>
+    <nav aria-label="主导航">
+      <a href="#about">关于我们</a>
+      <a href="#business">业务领域</a>
+      <a href="#namdini">代表项目</a>
+      <a href="#pipeline">在建与跟进</a>
+      <a href="#assets">设备与资源</a>
+      <a href="#team">团队与合作</a>
+      <a href="#contact">联系我们</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <h1>在加纳，参与建设并运营大型金矿</h1>
+    <p>秦汉西非自 2022 年进入加纳市场，以矿业工程、采剥施工、运营维护和矿业投资为核心，在当地建立了常驻团队、设备体系和经营网络。</p>
+    <div class="btns">
+      <a class="btn fill" href="#namdini">查看代表项目</a>
+      <a class="btn" href="#contact">联系我们</a>
+    </div>
+  </div>
+  <svg class="pit" viewBox="0 0 1200 150" preserveAspectRatio="none" aria-hidden="true">
+    <polygon points="0,40 220,40 220,62 400,62 400,84 560,84 560,106 640,106 640,84 800,84 800,62 980,62 980,40 1200,40 1200,150 0,150" fill="#184f3c"/>
+    <polygon points="0,78 180,78 180,98 360,98 360,118 520,118 520,136 680,136 680,118 840,118 840,98 1020,98 1020,78 1200,78 1200,150 0,150" fill="#c8962e" opacity=".9"/>
+    <polygon points="0,112 140,112 140,128 320,128 320,142 880,142 880,128 1060,128 1060,112 1200,112 1200,150 0,150" fill="#f2f3ef"/>
+  </svg>
+</div>
+
+<div class="facts">
+  <div class="wrap">
+    <ul>
+      <li><b>2022 年</b><span>进入加纳市场</span></li>
+      <li><b>20 亿元+</b><span>已完及在建项目合同额</span></li>
+      <li><b>90 平方公里+</b><span>加纳矿业权面积</span></li>
+      <li><b>1 亿元+</b><span>设备及车辆资产总价值</span></li>
+      <li><b>50 余台套</b><span>工程及矿山机械设备</span></li>
+      <li><b>40 余人</b><span>中国管理和技术骨干</span></li>
+    </ul>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="about">
+      <div>
+        <div class="sec-h"><h2>关于秦汉西非</h2></div>
+        <p>公司围绕加纳的大型矿山建设与生产运营持续开展业务，逐步形成以矿业工程、采剥施工、运营维护和矿业投资为核心，兼顾矿产品加工及基础设施项目开发的业务布局。</p>
+        <p>我们在加纳积累了大型金矿项目经验，建立了常驻专业团队、机械设备体系和本地经营网络，并持续向矿业资源投资与开发领域延伸。2025 年 10 月，秦汉西非分公司正式成立，统筹加纳区域的项目管理、人员配置和市场开发。</p>
+      </div>
+      <aside class="entities">
+        <h3>加纳经营主体</h3>
+        <ul>
+          <li>QIN HAN MING BANG ENGINEERING COMPANY LTD</li>
+          <li>GOLDEN DYNASTY CO. LTD</li>
+          <li>HANWAY INTERNATIONAL INVESTMENT LTD</li>
+          <li>HANWAY MORRIDE MINING LTD</li>
+        </ul>
+        <p>工程、投资及矿业相关主体协同推进多个业务板块。</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="business" class="alt">
+  <div class="wrap">
+    <div class="sec-h"><h2>业务领域</h2><p>从矿山建设到长期运营，再到资源投资。</p></div>
+    <div class="grid g2">
+      <div class="item"><h3>矿山工程与采剥</h3><p>矿区土建、露天采剥、工程机械施工及相关配套工程。</p></div>
+      <div class="item"><h3>矿山运营维护</h3><p>金矿生产运营、设备维护与现场技术管理。</p></div>
+      <div class="item"><h3>矿业投资开发</h3><p>矿权资源、项目收购、矿山开发及项目评估。</p></div>
+      <div class="item"><h3>矿产品及工程配套</h3><p>尾矿再选、石灰石加工及新能源、基础设施项目。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="namdini">
+  <div class="wrap">
+    <div class="sec-h"><h2>代表项目</h2><p>连续参与建设、采剥和运维多个环节，对大型金矿的现场管理、设备运行及跨专业协作有完整的实践经验。</p></div>
+    <div class="project">
+      <div class="lead">
+        <small>加纳上东大区 · Talensi</small>
+        <h3>Namdini 金矿</h3>
+        <p>Namdini 金矿由山东黄金旗下项目公司开发，是加纳规模最大的单系列金矿，也是西非具有代表性的大型露天金矿之一。项目体量大、施工环节多，对工程组织、设备保障和持续生产管理要求很高。</p>
+      </div>
+      <div class="scope">
+        <div><b>土建工程</b><span>参与矿区土建及相关施工，熟悉大型矿业项目的施工组织和现场协同要求。</span></div>
+        <div><b>矿山采剥</b><span>参与露天矿采剥作业，积累矿山机械投入、生产组织与施工管理经验。</span></div>
+        <div><b>运营维护</b><span>自建设阶段延续至生产运营阶段，目前仍负责 Namdini 金矿运营维护相关工作。</span></div>
+      </div>
+    </div>
+    <div class="box" style="margin-top:24px">
+      <h3>其他矿业项目</h3>
+      <p>除大型硬岩金矿外，公司还在以下地区开展砂金开采业务，积累了不同作业环境下的现场管理、机械组织、人员配合及本地作业协调经验。</p>
+      <div class="places"><span>阿基姆 Akyem</span><span>阿夸蒂亚 Akwatia</span><span>博尔加坦加 Bolgatanga</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="pipeline" class="alt">
+  <div class="wrap">
+    <div class="sec-h"><h2>在建与跟进项目</h2><p>在工程与运营业务之外，公司持续筛选矿业资源、清洁能源及基础设施领域的项目。</p></div>
+
+    <h3 style="margin-bottom:16px">正在投资建设</h3>
+    <div class="grid g2">
+      <div class="box"><span class="tag">在建</span><h3>塔夸 Tarkwa · 500 吨级尾矿选矿厂</h3><p>在塔夸地区投资推进尾矿选矿厂建设与后续运营，围绕尾矿再选和矿产资源综合利用开展业务。</p></div>
+      <div class="box"><span class="tag">在建</span><h3>特马 Tema · 石灰石加工厂</h3><p>在特马地区推进石灰石加工厂建设及运营，拓展矿业相关原材料加工与配套业务。</p></div>
+    </div>
+
+    <h3 style="margin:36px 0 16px">正在跟进的投资及合作项目</h3>
+    <div class="grid g3">
+      <div class="box"><span class="tag p">前期</span><h3>大型金矿收购及开发</h3><p>目标矿山探明及控制矿石资源量超过 1,000 万吨。目前重点在项目研究、合作对接和开发可行性评估。</p></div>
+      <div class="box"><span class="tag p">前期</span><h3>大型光伏建设项目</h3><p>与加纳地方行政机构直接对接，围绕建设条件、实施方案及合作方式开展前期工作，业务从矿业延伸至能源基础设施。</p></div>
+      <div class="box"><span class="tag p">前期</span><h3>白沃尔特河治理项目</h3><p>跟进白沃尔特河（White Volta River）河道治理及相关工程机会，与加纳千年发展管理局（MiDA）相关项目方向保持对接。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="assets">
+  <div class="wrap">
+    <div class="sec-h"><h2>设备与矿业权资源</h2></div>
+    <div class="assets">
+      <ul>
+        <li><b>50 余台套</b><span>挖掘机、矿卡、钻机、吊车、装载机、推土机、平地机、破碎加工设备、随车吊、压路机、洒水车、加油车及维修保养和后勤保障车辆</span></li>
+        <li><b>近 10 辆</b><span>陆地巡洋舰（Land Cruiser）、途乐（Patrol）、海拉克斯（Hilux）等越野车及皮卡</span></li>
+        <li><b>1 亿元+</b><span>设备及车辆资产总价值（人民币），可满足矿山建设、采剥施工、日常运营及现场后勤等需要</span></li>
+      </ul>
+      <ul>
+        <li><b>90 平方公里+</b><span>加纳矿业权面积合计，具备自有资源项目开发及矿业权合作的基础</span></li>
+        <li><b>20 亿元+</b><span>已完成和正在实施的项目合同额（人民币），覆盖大型矿山建设、采剥及持续运营</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="team" class="alt">
+  <div class="wrap">
+    <div class="sec-h"><h2>团队与合作</h2></div>
+    <div class="grid g2">
+      <div class="item">
+        <h3>管理团队与专业人才</h3>
+        <p>加纳现有中国管理人员 10 余人、金矿运营专家团队 20 余人、其他技术人员 10 余人，合计中国管理与技术骨干 40 余人，并配有加纳当地技术人员、操作工人及现场辅助人员。项目高峰期，在加纳的中国员工超过 100 人。</p>
+        <p style="margin-top:10px">国内矿业业务同步建设专业团队，成员具备山东黄金、招金矿业、紫金矿业、洛阳钼业、建龙集团等企业工作经历，覆盖矿业投资、地质技术、生产运营及财务管理。</p>
+      </div>
+      <div class="item">
+        <h3>政府及行业主管部门</h3>
+        <p>自进入加纳以来，公司长期与矿业及自然资源主管机构保持业务沟通，熟悉各部门职责与工作方式，在矿业权、环保、税务、人员出入境及跨部门事务方面有丰富的对接经验。</p>
+        <div class="govs" style="margin-top:14px">
+          <span>土地与自然资源部</span><span>矿业委员会</span><span>环境保护管理局</span><span>加纳税务局</span><span>加纳警察局</span><span>加纳移民局</span>
+        </div>
+      </div>
+      <div class="item">
+        <h3>地方合作与业务网络</h3>
+        <p>公司与西部大区（Western Region）、上东大区（Upper East Region）的政府机构及合作方保持长期交往，部分合作方向已通过谅解备忘录（MOU）明确。依托既有项目，建立了涵盖当地专业人员、工程施工、设备服务及项目协调的本地业务网络。</p>
+      </div>
+      <div class="item">
+        <h3>业务发展方向</h3>
+        <p>业务重心仍是矿山工程、采剥施工和长期运维，同时依托矿业权、专业人才及本地资源，稳步推进金矿投资与并购、尾矿再选、矿产品加工及能源基础设施项目。未来继续以加纳为基础，完善西非地区的矿业开发与项目运营布局。</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>联系我们</h2>
+    <p>矿山工程、运营维护、资源投资与项目合作，欢迎来信洽谈。</p>
+    <div class="contact">
+      <!-- TODO：把下面三项换成真实信息 -->
+      <div><small>邮箱</small>请填写公司邮箱</div>
+      <div><small>电话</small>请填写联系电话</div>
+      <div><small>地址</small>请填写加纳办公地址</div>
+    </div>
+    <div class="copy">© 2026 秦汉西非 Qin Han West Africa. 保留所有权利。</div>
+  </div>
+</footer>
+
+</body>
+</html>
